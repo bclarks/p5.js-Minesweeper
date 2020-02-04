@@ -8,11 +8,11 @@ var success_sound, failed_sound;
 
 function preload()
 {
-  img = loadImage('resources/mine.png');
-  img2 = loadImage('resources/marker.png');
-  success_sound = loadSound('resources/applause.mp3');
+  img = loadImage('./resources/mine.png');
+  img2 = loadImage('./resources/marker.png');
+  success_sound = loadSound('./resources/applause.mp3');
   success_sound.setVolume(0.3);
-  failed_sound = loadSound('resources/bomb_explosion.wav');
+  failed_sound = loadSound('./resources/bomb_explosion.wav');
   failed_sound.setVolume(0.12);
 }
 
@@ -272,11 +272,11 @@ function if_finished()
 }
 function game_over()
 {
-  alert('Game Over!');
+  window.alert('Game Over!');
   setup();
 }
 function you_won()
 {
-  alert('Congratulations!\nYou won! :D');
+  window.alert('Congratulations!\nYou won! :D');
   setup();
 }
